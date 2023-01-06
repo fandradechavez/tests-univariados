@@ -1,0 +1,7 @@
+# 8.2 One-Sample z-Test for Proportions
+# https://www.r-bloggers.com/2022/05/one-sample-proportion-test-in-r-complete-guide/
+
+
+prop <- prop.test(x = 419, n = 1000, p = .45, correct = FALSE,
+                  alternative = "less")
+prop

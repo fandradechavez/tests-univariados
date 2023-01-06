@@ -1,0 +1,24 @@
+# 8.4 Two-Sample z-Test for Difference Between Two Proportions
+# https://www.r-bloggers.com/2022/05/two-sample-proportions-test-in-r-complete-guide/
+# https://www.geeksforgeeks.org/two-proportions-z-test-in-r-programming/
+
+res <- prop.test(x = c(323, 279), n = c(500, 450),
+                 conf.level = 0.95, 
+                 alternative = "greater", 
+                 correct = FALSE # Yates correction
+                 )
+res
+
+
+
+
+?prop.test
+
+
+res <- prop.test(x = c(450, 400), n = c(500, 500))
+res
+
+
+prop.test(x = c(490, 400), n = c(500, 500), alternative = "less")
+
+prop.test(x = c(450, 400), n = c(500, 500), alternative = "greater")

@@ -1,0 +1,13 @@
+# 8.3 Two-Sample z-Interval for Difference Between Two Proportions
+# https://www.r-bloggers.com/2022/05/two-sample-proportions-test-in-r-complete-guide/
+# https://www.geeksforgeeks.org/two-proportions-z-test-in-r-programming/
+
+
+
+res <- prop.test(x = c(158, 176), n = c(200, 200),
+                 conf.level = 0.99,
+                 p = NULL,
+                 correct = FALSE # Yates correction
+                 
+)
+res

@@ -1,0 +1,15 @@
+# Example 2:
+# Goodness of association
+# https://www.r-bloggers.com/2021/01/chi-square-tests/
+
+Failure  <- c(144, 151, 142, 135, 143)
+Success  <- c(96, 89, 103, 95, 82)
+dat <- cbind(Failure,Success)
+rownames(dat) <- c("Exercise only",
+                    "Drug only",
+                    "Exercise & Drug",
+                    "Exercise & Placebo",
+                    "Placebo only")
+
+test <- chisq.test(dat, correct = FALSE)
+test

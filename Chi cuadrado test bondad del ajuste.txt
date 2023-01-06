@@ -1,0 +1,14 @@
+# Página 174 AP Statistics
+# https://www.r-bloggers.com/2021/01/chi-square-tests/
+  
+# Example 1:
+# Goodness of fit:
+
+y = c(7.28,	7.84,	7.28,	11.2,	8.96,	13.44)
+x = y/sum(y)
+Trees_observed <- c(6, 6, 5, 15, 9, 15)
+theoretical_proportion <- x
+test <- chisq.test(Trees_observed, p=theoretical_proportion)
+test
+
+pval = 1-pchisq(16.606,df=2)

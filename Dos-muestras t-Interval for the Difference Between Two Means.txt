@@ -1,0 +1,19 @@
+# 7.4 Two-Sample t-Interval for the Difference Between Two Means
+# https://stackoverflow.com/questions/5526922/r-t-test-from-n-mean-sd
+
+boys = c(20, 30, 35, 40, 40, 45, 45, 45, 50, 50, 50, 50, 52, 54, 55, 60, 60, 60, 
+70, 75)
+
+girls = c(20, 20, 30, 35, 35, 40, 40, 40, 45, 45, 45, 50, 50, 50, 52, 
+60, 60, 60, 60, 60)
+
+length(boys)
+sd(boys)
+
+length(girls)
+sd(girls)
+
+tsum.test(mean.x=mean(boys),   s.x=sd(boys), n.x=length(boys),
+          mean.y=mean(girls), s.y=sd(girls), n.y=length(girls),
+          conf.level = 0.95,
+          var.equal = FALSE)

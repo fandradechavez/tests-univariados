@@ -1,0 +1,5 @@
+# 7.2 One-Sample t-Interval for the Mean
+# https://stats.libretexts.org/Bookshelves/Introductory_Statistics/Book%3A_Statistics_Using_Technology_(Kozak)/07%3A_One-Sample_Inference/7.03%3A_One-Sample_Test_for_the_Mean
+
+boys = rnorm(n = 42, mean = 16.5, sd = 4.5)
+t.test(x = boys, mu = 15, alternatative = "greater",conf.level = 0.95, df = 41)

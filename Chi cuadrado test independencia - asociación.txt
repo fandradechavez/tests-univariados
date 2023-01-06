@@ -1,0 +1,22 @@
+# Example 2:
+# Independence/Association
+# https://sites.williams.edu/bklingen/files/2012/02/R-code-for-inference-about-several-proportions.pdf
+
+
+Female  <- c(40,
+             14,
+             16)
+Male  <- c(28,
+           16,
+           31)
+dat <- cbind(Female, Male)
+rownames(dat) <- c("Spend less",
+                   "Spend same",
+                   "Spend more")
+
+
+
+
+test <- chisq.test(dat)
+test
+

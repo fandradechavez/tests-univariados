@@ -1,0 +1,10 @@
+# 8.1 One-Sample z-Interval for Proportions
+
+# https://www.r-bloggers.com/2022/05/one-sample-proportion-test-in-r-complete-guide/
+
+?prop.test
+prop <- prop.test(x = 18, n = 100, p =NULL, correct = FALSE,
+                  conf.level = .90,
+                  alternative = NULL
+)
+prop
